@@ -1,66 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;   
-    padding: 10px 50px;
+.container {
+    background: #d8c8af;
 }
 
-.header .title h1 {
-    font-size: 35px;
+.container img {
+    width: 100px;
+    height: 100px;
 }
 
-.header .btn {
-    border-radius: 25px;
-    background-color: rgb(73, 168, 231);
-    padding: 15px;
+.container .ht11 {
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.container .ht12 {
+    position: absolute;
+    left: 5%;
+    top: 0;
+} 
+
+.container .ht13 {
+    position: absolute;
+    left: 10%;
+    top: 0;
+} 
+
+.container .ht14 {
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+} 
+
+.container .ht15 {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
 }
 
-.header .btn:hover {
-    border-radius: 25px;
-    background-color: rgb(73, 110, 231);
-    padding: 15px;
+.container .ht16 {
+    position: absolute;
+    right: 10%;
+    bottom: 0;
 }
 
-.header .btn a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
+/* .container .ht17 {
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
-.img-container {
-    margin: 20px 20px;
+.container .ht18 {
+    position: absolute;
+    left: 60%;
+    top: 0;
 }
 
-/* .img-container img {
-    width: 100%;
-    height: 100%;
+.container .ht19 {
+    position: absolute;
+    left: 70%;
+    top: 0;
+}
+
+.container .ht20 {
+    position: absolute;
+    left: 80%;
+    top: 0;
 } */
 
-@media screen and (max-width: 480px) {
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;   
-        padding: 10px 50px;
+.notebook {
+    margin-top: 0px;
+    background-image: url(img/notebook-nbg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 650px;
+    height: 100vh;
+}
+
+.paragraph {
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .container {
+        padding: 0 20px;
     }
 
-    .header .title h1 {
-        font-size: 30px;
-        text-align: center;
+    .container img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .notebook {
+        margin-top: 0px;
+        background-image: url(img/notebook-nbg.png);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+        height: 120vh;
     }
 
-    .header .btn {
-        border-radius: 25px;
-        background-color: rgb(73, 168, 231);
-        padding: 15px;
+    .paragraph {
+        width: 300px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 
-
-  }
+    .paragraph p {
+        font-size: 12px;
+    }
+}
